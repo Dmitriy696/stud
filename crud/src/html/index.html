@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+    <header><h1 class="header">CRUD Database</h1></header>
+    <div class="container">
+        <div class="radio_buttons">
+            <p><input type="radio" class="flag" id="LS" name="radio-group">
+                <label for="LS">Local Storage</label></p>
+            <p><input type="radio" class="flag" id="IDB" name="radio-group">
+                <label for="IDB">Index DB</label></p>
+        </div>
+        <div class="inputs-buttons">
+            <div class="all-inputs">
+            <div class="inputs">
+                <input class="userData" type="text" id="ID" placeholder="ID">
+                <input class="userData" type="text" id="firstName" placeholder="First name">
+                <input class="userData" type="text" id="lastName" placeholder="Last name">
+            </div>
+            <div class="inputs">
+                <input class="userData" type="text" id="age" placeholder="Age">
+                <input class="userData" type="text" id="email" placeholder="Email">
+                <input class="userData" type="text" id="phone" placeholder="Phone">
+            </div>
+            </div>
+            <div class="button">
+                <input class="btn" id="create" type="button" value="create">
+                <input class="btn" id="update" type="button" value="update">
+                <input class="btn" id="delete" type="button" value="delete">
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="table">
+        <div class="column id">ID</div>
+        <div class="column first">First</div>
+        <div class="column last">Last</div>
+        <div class="column age">Age</div>
+        <div class="column email">Email</div>
+        <div class="column phone">Phone</div>
+    </div>
+    <div class="wide_line"></div>
+    <div id="myDiv"></div>
+	<!-- Scripts -->
+	<script src="js/index.js"></script>
+</body>
+</html>
